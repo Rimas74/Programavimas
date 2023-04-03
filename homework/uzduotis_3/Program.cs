@@ -10,6 +10,10 @@ namespace uzduotis_3
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("{0}", new string('*', 4));
+            Console.WriteLine("{0}{1}{2}", new string('*', 1), new string(' ',3), new string('*', 1));
+            Console.WriteLine("{0}{1}{2}", new string('*', 1), new string(' ',3), new string('*', 1));
+            Console.WriteLine("{0}", new string('*', 4));
         }
     }
 }
