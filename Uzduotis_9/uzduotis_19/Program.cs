@@ -28,29 +28,12 @@ namespace uzduotis_19
 
             // 2.
             int num;
-            while (true)
+
+            do
             {
-                Console.Write("2. Įveskite sveiką teigiamą skaičių (išskyrus 1): ");
-                try
-                {
-                    num = Convert.ToInt32(Console.ReadLine());
-                    if (num == 1)
-                    {
-                        Console.WriteLine("Įvestas skaičius negali būti lygus 1, įveskite kitą skaičių.");
-                        continue;
-                    }
-                    if (num <= 0)
-                    {
-                        Console.WriteLine("Įvestas skaičius turi būti teigiamas, įveskite kitą skaičių.");
-                        continue;
-                    }
-                    break;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Netinkamas formato skaičius, įveskite kitą skaičių.");
-                }
-            }
+                Console.Write("Please enter a positive integer greater than 1: ");
+            } while (!int.TryParse(Console.ReadLine(), out num) || num <= 1);
+
 
             int power = 2;
             int result = num;
