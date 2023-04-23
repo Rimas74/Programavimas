@@ -71,22 +71,7 @@ class Salis
         Console.WriteLine(new string('-',70));
     }
 
-    //public void RastiReiksme(int indeksas)
-    //{
-    //    if (indeksas < 0 || indeksas >= Augimas.Length)
-    //    {
-    //        Console.WriteLine("Neteisingas masyvo indeksas!");
-    //        return;
-    //    }
-
-    //    Console.WriteLine($"Masyvo elementas {indeksas} yra {Augimas[indeksas]}");
-
-    //    if (indeksas + 1 < Augimas.Length && Augimas[indeksas] > Augimas[indeksas + 1])
-    //    {
-    //        Console.WriteLine($"Masyvo elementas {indeksas + 1} yra {Augimas[indeksas + 1]}");
-    //    }
-
-    //}
+    
 
 }
 class Program
